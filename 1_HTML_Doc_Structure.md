@@ -1,6 +1,6 @@
 # HTML Boiler Plate Code
 
-<!DOCTYPE html> -> Indicates that this is a HTML document, othwerwise the browser might go into "quirks mode" and render your site incorrectly.\n
+<!DOCTYPE html> -> Indicates that this is a HTML document, othwerwise the browser might go into "quirks mode" and render your site incorrectly.
 <html lang="en"> -> This tells the screen readers and search engines that the primary language of the page is "English(en)".
 <head> -> Contains the information about the page which doesn't show up on actual screen. It's for browsers, search engines and social media bots.
     <meta charset="UTF-8"> -> This tells the browser to use the UTF-8 character set. It ensures that almost any character from emojis to special symbols in other languages displays correctly.
