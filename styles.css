@@ -1,11 +1,14 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+/* Universal Selector */
+/* 
+* {
+  border-top: 10px solid #1098ad; Applies to all the elements in the document
+} */
+
+/* Inheritance */
+body {
+  font-family: sans-serif; /* Gets inherited */
+  color: #444; /* Gets inherited */
+  border-top: 10px solid #1098ad; /* Doesn't get inherited */
 }
 
 h1 {
