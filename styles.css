@@ -18,6 +18,11 @@ body {
   border-top: 10px solid #1098ad; /* Doesn't get inherited */
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto; /* Trick for centering the page */
+}
+
 .main-header {
   /* padding: 20px;
   padding-left: 40px;
