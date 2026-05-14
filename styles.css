@@ -131,3 +131,21 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+/* Resloving Selectors Conflict */
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellowgreen;
+}
+
+/* footer p {
+  color: green !important;
+} */
