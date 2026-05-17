@@ -243,7 +243,7 @@ nav a:link:last-child {
 
 /*Psuedo Elements*/
 
-h1::first-letter {
+/* h1::first-letter {
   font-style: normal;
 }
 
@@ -253,7 +253,7 @@ p::first-line {
 
 h3 + p::first-line {
   color: blue;
-}
+} */
 
 h2 {
   /* background-color: gold; */
@@ -271,4 +271,29 @@ h2::after {
   padding: 5px 10px;
   top: -15px;
   right: -25px;
+}
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 80px; */
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.main-header {
+  background-color: red;
 }
