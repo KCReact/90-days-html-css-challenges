@@ -297,3 +297,16 @@ nav {
 .main-header {
   background-color: red;
 }
+
+/* Used to retain the height of the parent element in case if height collapses when all the child elements are floats*/
+
+.clear {
+  clear: both;
+}
+
+/* CLEARFIX hack is used to clear the floats instead of adding divs and styling them like in the above step to acheive the same result*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
