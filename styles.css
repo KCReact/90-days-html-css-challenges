@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto; /* Trick for centering the page */
 }
 
@@ -294,10 +294,6 @@ nav {
   float: right;
 }
 
-.main-header {
-  background-color: red;
-}
-
 /* Used to retain the height of the parent element in case if height collapses when all the child elements are floats*/
 
 .clear {
@@ -309,4 +305,18 @@ nav {
   content: "";
   clear: both;
   display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
