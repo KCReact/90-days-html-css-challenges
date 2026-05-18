@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Inheritance */
@@ -71,6 +72,7 @@ h4 {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 p {
@@ -123,6 +125,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* Colors */
@@ -141,8 +144,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* Pseudo Classes */
