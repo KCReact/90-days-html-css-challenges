@@ -1,41 +1,24 @@
-/* Universal Selector */
-/* 
-* {
-  border-top: 10px solid #1098ad; Applies to all the elements in the document
-} */
-
-/* GLOBAL RESET */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Inheritance */
 body {
-  font-family: sans-serif; /* Gets inherited */
-  color: #444; /* Gets inherited */
-  border-top: 10px solid #1098ad; /* Doesn't get inherited */
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
   position: relative;
 }
 
 .container {
   width: 1200px;
-  margin: 0 auto; /* Trick for centering the page */
+  margin: 0 auto;
 }
 
 .main-header {
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-   */
-
-  /* SHORT HAND */
   padding: 20px 40px;
   margin-bottom: 60px;
-
-  /* height: 80px; */
 }
 
 .post-header {
@@ -43,7 +26,7 @@ body {
 }
 
 .post-img {
-  width: 100%; /* Occupies 100% of width of it's parent container*/
+  width: 100%;
   height: auto;
 }
 
@@ -97,17 +80,6 @@ li:last-child {
   margin-bottom: 0;
 }
 
-/* Descendant Selectors */
-/* footer p {
-  font-size: 16px;
-} */
-
-/* article header p {
-  font-style: italic;
-} */
-
-/* ID Selectors */
-
 #author {
   font-style: italic;
   font-size: 18px;
@@ -147,30 +119,17 @@ aside {
   padding: 50px 40px;
 }
 
-/* Pseudo Classes */
-
 li:first-child {
   font-weight: bold;
 }
-
-/* li:nth-child(3) {
-  color: darkgreen;
-} */
 
 li:nth-child(even) {
   font-style: italic;
 }
 
-/* li:nth-child(odd) {
-  color: goldenrod;
-} */
-
-/* This won't work as for it to work the p should be the first child of article's parent */
 article p:first-child {
   color: red;
 }
-
-/*Styling Links*/
 
 a:link {
   color: #1098ad;
@@ -192,73 +151,16 @@ a:active {
   font-style: italic;
 }
 
-/* Displaying Inline , Block and Inline-Block Level Elements  */
-nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  padding: 20px;
-
-  display: block; */
-
-  margin-right: 30px;
-  margin-top: 10px;
-
-  display: inline-block;
-}
-
-nav a:link:last-child {
-  margin-right: 0;
-}
-
-/* Resloving Selectors Conflict */
-
-/* #copyright {
-  color: red;
-}
-
-.copyright {
-  color: blue;
-}
-
-.text {
-  color: yellowgreen;
-} */
-
-/* footer p {
-  color: green !important;
-} */
-
-/* Positioning */
-
 .like-button {
   padding: 20px;
   font-size: 22px;
   cursor: pointer;
-
   position: absolute;
-  /* top: 50px;
-  left: 50px; */
-
   bottom: 50px;
   right: 50px;
 }
 
-/*Psuedo Elements*/
-
-/* h1::first-letter {
-  font-style: normal;
-}
-
-p::first-line {
-  color: red;
-}
-
-h3 + p::first-line {
-  color: blue;
-} */
-
 h2 {
-  /* background-color: gold; */
   position: relative;
 }
 
@@ -275,50 +177,48 @@ h2::after {
   right: -25px;
 }
 
-/* FLOATS */
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-}
-
-.author {
-  /* padding-left: 80px; */
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-h1 {
-  float: left;
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
 nav {
-  float: right;
+  display: flex;
+  gap: 30px;
 }
 
-/* Used to retain the height of the parent element in case if height collapses when all the child elements are floats*/
-
-.clear {
-  clear: both;
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-/* CLEARFIX hack is used to clear the floats instead of adding divs and styling them like in the above step to acheive the same result*/
-.clearfix::after {
-  content: "";
-  clear: both;
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
   display: block;
 }
 
-article {
-  width: 825px;
-  float: left;
-}
-
-aside {
-  width: 300px;
-  float: right;
-}
-
-footer {
-  clear: both;
+.related-author {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
 }
